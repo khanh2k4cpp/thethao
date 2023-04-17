@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="payment.css">
+    <title>Payment</title>
+</head>
+
+<body>
+
+    <h1>THANH TOÁN HÓA ĐƠN BẰNG THẺ NGÂN HÀNG</h1>
+    <form>
+        <label for="cardholder-name">Tên Ngân Hàng :</label>
+        <input type="text" id="cardholder-name" name="cardholder-name" required>
+        <br clear="both">
+
+        <label for="card-number">Số thẻ :</label>
+        <input type="text" id="card-number" name="card-number" required>
+        <br clear="both">
+
+        <label for="cardholder-name">Họ và tên chủ thẻ:</label>
+        <input type="text" id="cardholder-name" name="cardholder-name" required>
+        <br clear="both">
+
+        <label for="expiration-date">Ngày hết hạn:</label>
+        <input type="text" id="expiration-date" name="expiration-date" placeholder="MM/YY" required>
+        <br clear="both">
+
+        <label for="cvv">Mã bảo mật (CVV):</label>
+        <input type="text" id="cvv" name="cvv" required>
+        <br clear="both">
+
+
+
+        <label for="billing-address">Địa chỉ:</label>
+        <input type="text" id="billing-address" name="billing-address" required>
+        <br clear="both">
+
+        <label for="amount">Số tiền cần thanh toán (Vnd):</label>
+        <input type="number" id="amount" name="amount" min="0" required>
+        <br clear="both">
+
+        <button id="btn-payment" type="submit">Xác nhận thanh toán</button>
+    </form>
+
+    <script src="payment.js"></script>
+</body>
+
+</html>
